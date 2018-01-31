@@ -1,6 +1,6 @@
-{% set version = "1.1.0" %}
+{% set version = "2.0.0rc0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "16fa1b5b9e8bcb55cd291799ee80009d2d936cb94469064ebc6524569f8261c6" %}
+{% set hash_val = "da03558e199a99dd434da21fb39d1826f228647d59f5aa516962139fa86c291c" %}
 
 package:
   name: pescador
@@ -12,7 +12,7 @@ source:
   {{ hash_type }}: {{ hash_val }}
 
 build:
-  number: 1
+  number: 0
   script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
@@ -23,10 +23,10 @@ requirements:
   run:
     - python
     - joblib >=0.9
-    - six
-    - pyzmq
-    - numpy
-    - decorator
+    - six >=1.8
+    - pyzmq >=15.0
+    - numpy >=1.9
+    - decorator >=4.0
 
 test:
   # Python imports
