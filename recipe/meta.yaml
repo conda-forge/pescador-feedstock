@@ -1,6 +1,6 @@
-{% set version = "2.0.0" %}
+{% set version = "2.0.2" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "a2daa674256ee09e222aa86ed4991706c122ad6f7b05119916848626a69ffc04" %}
+{% set hash_val = "9233ce4530f13c6e4e0825de863bfd9ec75bcb205d0e374c9486099e31366c43" %}
 
 package:
   name: pescador
@@ -13,7 +13,7 @@ source:
 
 build:
   noarch: python
-  number: 1
+  number: 0
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
