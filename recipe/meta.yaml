@@ -1,6 +1,6 @@
-{% set version = "2.0.2" %}
+{% set version = "2.1.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "9233ce4530f13c6e4e0825de863bfd9ec75bcb205d0e374c9486099e31366c43" %}
+{% set hash_val = "3e3be068f91d4ca80b09a73360457921837aa62d2c0cf3fa0e98eac8a85c7787" %}
 
 package:
   name: pescador
