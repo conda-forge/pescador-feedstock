@@ -1,6 +1,6 @@
-{% set version = "2.1.0" %}
+{% set version = "3.0.0" %}
 {% set hash_type = "sha256" %}
-{% set hash_val = "3e3be068f91d4ca80b09a73360457921837aa62d2c0cf3fa0e98eac8a85c7787" %}
+{% set hash_val = "2ec9ca7d31db492a1c5a024a51bd497be3b15b7229232365a55b2765dd5eef68" %}
 
 package:
   name: pescador
@@ -19,16 +19,15 @@ build:
 requirements:
   host:
     - pip
-    - python
-    - setuptools
+    - python >=3.7
+    - setuptools >=48
 
   run:
-    - python
-    - joblib >=0.9
-    - six >=1.8
-    - pyzmq >=15.0
+    - python >=3.7
+    - pyzmq >=18.0
     - numpy >=1.9
     - decorator >=4.0
+    - msgpack-python >=1.0
 
 test:
   # Python imports
